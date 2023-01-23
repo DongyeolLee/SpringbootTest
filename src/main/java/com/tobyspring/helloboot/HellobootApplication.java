@@ -2,11 +2,11 @@ package com.tobyspring.helloboot;
 
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServer;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import com.tobyspring.helloboot.configuration.SimpleConfiguration;
-
+@ComponentScan
 public class HellobootApplication {
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class HellobootApplication {
             }
         };
 
-        applicationContext.register(SimpleConfiguration.class);
+        applicationContext.register(HellobootApplication.class);
         applicationContext.refresh();
     }
 }

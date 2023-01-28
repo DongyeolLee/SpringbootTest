@@ -1,4 +1,4 @@
-package com.tobyspring.helloboot;
+package com.tobyspring.otherhelloboot.configuration;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,5 +12,6 @@ import org.springframework.context.annotation.Configuration;
 @Retention(RetentionPolicy.RUNTIME)
 @ComponentScan
 @Configuration
-public @interface MySpringAnnotation {
+@EnableMyAutoConfiguration
+public @interface MySpringBootApplication {
 }

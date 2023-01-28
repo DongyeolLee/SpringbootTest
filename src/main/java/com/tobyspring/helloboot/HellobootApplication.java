@@ -2,8 +2,10 @@ package com.tobyspring.helloboot;
 
 import org.springframework.boot.SpringApplication;
 
+import com.tobyspring.otherhelloboot.configuration.MySpringBootApplication;
+
 //@ComponentScan
-@MySpringAnnotation
+@MySpringBootApplication
 public class HellobootApplication {
 
     public static void main(String[] args) {

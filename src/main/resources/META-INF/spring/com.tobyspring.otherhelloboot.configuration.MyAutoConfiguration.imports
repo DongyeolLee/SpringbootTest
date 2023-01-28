@@ -1,0 +1,2 @@
+com.tobyspring.otherhelloboot.configuration.autoconfig.DispatcherServletConfig
+com.tobyspring.otherhelloboot.configuration.autoconfig.TomcatWebServerConfig
